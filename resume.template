@@ -193,7 +193,7 @@
                     </p>
                     <p class="text-muted">
                       <small>
-                        {{startDate}} - {{#if endDate}} {{endDate}} {{else}} Present {{/if}}
+                        {{startDate}} {{#if (ne startDate endDate)}} - {{#if endDate}} {{endDate}} {{else}} Present {{/if}} {{/if}}
                       </small>
                     </p>
                     <p>{{summary}}</p>
