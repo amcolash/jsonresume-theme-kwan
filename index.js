@@ -175,10 +175,6 @@ function render(resume) {
         _.each( [ 'startDate', 'endDate' ], function ( date ) {
             var date_obj = new Date( volunteer_info[ date ] );
 
-            if (volunteer_info.startDate === volunteer_info.endDate) {
-                volunteer_info.single_date = volunteer_info.startDate;
-            }
-
             if ( volunteer_info[ date ] ) {
                 volunteer_info[ date ] = moment( date_obj ).format( date_format );
             }
@@ -198,7 +194,7 @@ function render(resume) {
 
     Handlebars.registerHelper('toClassName', function(text) {
         return text.toLowerCase().replace(/ /, '-');
-    })    
+    })
     return Handlebars.compile(template)({
         css: css,
         resume: resume
