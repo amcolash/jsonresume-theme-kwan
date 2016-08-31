@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrew McOlash</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lato:400,500,600,700|Open+Sans:400,500,600,700' rel='stylesheet' type='text/css'>
+    <style>
+      .clear-margin {
+  margin: 0;
+}
+.space-top {
+  margin-top: 10px;
+}
+.space-right {
+  margin-right: 10px;
+}
+.icon-left {
+  margin-right: 5px;
+}
+.icon-right {
+  margin-left: 5px;
+}
+.labels {
+  word-spacing: 5px;
+  line-height: 2;
+}
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+}
+.link-disguise {
+  color: inherit;
+}
+.link-disguise:hover {
+  color: inherit;
+}
+@media (max-width: 992px) {
+  .clear-margin-sm {
+    margin-bottom: 0;
+  }
+}
+body {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333333;
+  font-size: 16px;
+}
+.text-bolder {
+  font-weight: bold;
+}
+@media only screen {
+  .container {
+    max-width: 50em;
+  }
+}
+@media (max-width: 480px) {
+  ul {
+    padding-left: 25px;
+  }
+  /*
+        .mobile-title {
+            display: inline-block;
+            margin-left: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+*/
+  .background-details {
+    display: block;
+  }
+  .background-details .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .icon,
+  .background-details .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .title {
+    display: none;
+  }
+  .card-nested {
+    padding: 5px 0;
+  }
+}
+.profile-card {
+  display: table;
+  width: 100%;
+}
+.profile-pic {
+  display: table-cell;
+  vertical-align: top;
+  padding: 1rem 4rem 0 0 ;
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
+.contact-details {
+  display: table-cell;
+}
+.contact-details .detail {
+  display: inline-block;
+  line-height: 2;
+  margin-right: 2rem;
+}
+.contact-details .detail .icon {
+  padding-right: 7px;
+  color: #888;
+}
+.contact-details .detail .info {
+  font-size: 0.8em;
+}
+.social-links {
+  line-height: 2.5;
+}
+.social-link {
+  display: block;
+}
+.social-link span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.social-link:hover,
+.social-link:focus {
+  text-decoration: none;
+}
+.social-link .fa {
+  text-align: center;
+  width: 2em;
+}
+.fa-github {
+  color: #454545;
+}
+.fa-github:hover,
+.fa-github:focus {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+.fa-twitter {
+  color: #33ccff;
+}
+.fa-twitter:hover,
+.fa-twitter:focus {
+  text-decoration: none;
+  color: #00bfff;
+}
+.fa-rss {
+  color: #f36f24;
+}
+.fa-rss:hover,
+.fa-rss:focus {
+  text-decoration: none;
+  color: #d8560c;
+}
+.fa-linkedin {
+  color: #007bb6;
+}
+.fa-linkedin:hover,
+.fa-linkedin:focus {
+  text-decoration: none;
+  color: #005983;
+}
+.fa-skype {
+  color: #12a5f4;
+}
+.fa-skype:hover,
+.fa-skype:focus {
+  text-decoration: none;
+  color: #0986ca;
+}
+.fa-stack-overflow {
+  color: #8e8e92;
+}
+.fa-stack-overflow:hover,
+.fa-stack-overflow:focus {
+  text-decoration: none;
+  color: #747479;
+}
+.fa-soundcloud {
+  color: #e8822d;
+}
+.fa-soundcloud:hover,
+.fa-soundcloud:focus {
+  text-decoration: none;
+  color: #cc6916;
+}
+.fa-pinterest {
+  color: #bd091f;
+}
+.fa-pinterest:hover,
+.fa-pinterest:focus {
+  text-decoration: none;
+  color: #8c0717;
+}
+.fa-vimeo {
+  color: #17b3e8;
+}
+.fa-vimeo:hover,
+.fa-vimeo:focus {
+  text-decoration: none;
+  color: #128fba;
+}
+.fa-behance {
+  color: #2c98cf;
+}
+.fa-behance:hover,
+.fa-behance:focus {
+  text-decoration: none;
+  color: #2379a5;
+}
+.fa-codepen {
+  color: #1c1c1c;
+}
+.fa-codepen:hover,
+.fa-codepen:focus {
+  text-decoration: none;
+  color: #020202;
+}
+.fa-foursquare {
+  color: #fa4778;
+}
+.fa-foursquare:hover,
+.fa-foursquare:focus {
+  text-decoration: none;
+  color: #f91554;
+}
+.fa-reddit {
+  color: #545454;
+}
+.fa-reddit:hover,
+.fa-reddit:focus {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+.fa-spotify {
+  color: #acd200;
+}
+.fa-spotify:hover,
+.fa-spotify:focus {
+  text-decoration: none;
+  color: #829f00;
+}
+.fa-dribbble {
+  color: #ce366f;
+}
+.fa-dribbble:hover,
+.fa-dribbble:focus {
+  text-decoration: none;
+  color: #a82959;
+}
+.fa-facebook {
+  color: #4b6daa;
+}
+.fa-facebook:hover,
+.fa-facebook:focus {
+  text-decoration: none;
+  color: #3b5687;
+}
+.fa-angellist {
+  color: #000000;
+}
+.fa-angellist:hover,
+.fa-angellist:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.fa-bitbucket {
+  color: #205081;
+}
+.fa-bitbucket:hover,
+.fa-bitbucket:focus {
+  text-decoration: none;
+  color: #163758;
+}
+.fa-google-plus {
+  color: #bf2a1d;
+}
+.fa-google-plus:hover,
+.fa-google-plus:focus {
+  text-decoration: none;
+  color: #932016;
+}
+.background-card h4 {
+  font-variant: small-caps;
+  color: #777777;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+.background-card h4:not(:first-child) {
+  margin-top: 2em;
+}
+h4 > .fa,
+h4 > .title {
+  display: inline-block;
+  vertical-align: baseline;
+}
+h4 > .fa {
+  width: 4rem;
+}
+.content {
+  line-height: 1.5;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  padding: 2em 3.5em;
+}
+.card-nested {
+  padding: 1.5rem 0 1.5rem 4.2rem;
+}
+.card-wrapper {
+  padding: 5px;
+}
+.enumeration:not(:last-child):after {
+  content: ", ";
+}
+.enumeration:last-child:after {
+  content: ".";
+}
+@media only screen and (max-width: 768px) {
+  .profile-card {
+    display: block;
+  }
+  .contact-details,
+  .profile-pic {
+    display: block;
+    text-align: center;
+  }
+  .card-nested {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-details .detail {
+    display: block;
+  }
+}
+.card-skills {
+  position: relative;
+}
+.skill-info {
+  margin-left: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .skill {
+    border-left: 9px solid #555555;
+  }
+  .skill.beginner {
+    height: 50%;
+    border-color: #e74c3c;
+  }
+  .skill.intermediate {
+    height: 70%;
+    border-color: #f1c40f;
+  }
+  .skill.advanced {
+    border-color: #5cb85c;
+  }
+  .skill.master {
+    border-color: black;
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}
+@media print {
+  body {
+    font-size: 10pt;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+  .background-card h4:not(:first-child) {
+    margin-top: 0 !important;
+  }
+  .card {
+    border: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .contact-details .detail .icon {
+    color: #888 !important;
+  }
+  .background-card h4 {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: 1em !important;
+  }
+  h4 > .fa {
+    display: none !important;
+  }
+  .card-nested {
+    padding: .5rem 0 .5rem 0;
+  }
+  .labels {
+    display: inline;
+  }
+  .skill-info {
+    margin-left: 0;
+  }
+  blockquote {
+    font-size: 100%;
+  }
+}
+
+    </style>
+  </head>
+
+  <body itemscope itemtype="http://schema.org/Person">
+
+    <div class="container">
+      <section class="row">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="profile-card">
+                <div class="profile-pic">
+                  <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
+                    alt="Andrew McOlash" src="//www.gravatar.com/avatar/a2821096114f7641f9a304453fa56137?s=100&amp;r=pg&amp;d=mm" itemprop="image">
+                </div>
+                <div class="contact-details">
+                  <div class="name-and-profession">
+                    <h3 class="text-bolder name" itemprop="name"> Andrew McOlash</h3>
+                    <h5 class="text-muted" itemprop="jobTitle">Software Engineer</h5>
+                  </div>
+
+                    <div class="detail">
+                      <span class="icon">
+                        <i class="fa fa-lg fa-envelope"></i>
+                      </span>
+
+                      <span class="info">
+                        <a href="mailto:amcolash@gmail.com" class="link-disguise" itemprop="email">amcolash@gmail.com</a>
+                      </span>
+                    </div>
+
+                    <div class="detail">
+                      <span class="icon">
+                        <i class="fa fa-lg fa-phone"></i>
+                      </span>
+
+                      <a href="tel://(414) 745-2657" class="link-disguise info" itemprop="telephone">
+                        (414) 745-2657
+                      </a>
+                    </div>
+
+                    <div class="detail">
+                      <span class="icon">
+                        <i class="fa fa-lg fa-map-marker"></i>
+                      </span>
+
+                        <span class="info">
+                          Madison, Wisconsin,
+                          US
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+            <hr>
+
+            <div class="social-links">
+                <a class="social-link" href="https://github.com/amcolash" target="_blank">
+                  <span class="fa fa-github fa-2x"></span>
+                  <span class="social-link-text">https://github.com/amcolash</span>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/andrew-mcolash-66a03350" target="_blank">
+                  <span class="fa fa-linkedin fa-2x"></span>
+                  <span class="social-link-text">https://www.linkedin.com/in/andrew-mcolash-66a03350</span>
+                </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="card-wrapper">
+          <div class="card background-card">
+
+              <h4 id="about"> <span class="fa fa-lg fa-user"></span> <span class="title">About</span> </h4>
+              <div class="card-nested" itemprop="description">
+                <p> He is a Software Engineer at Perblue. When not staring deeply into a text editor (usually vim, Atom or Eclipse) and trying to solve all of the problems, he likes to bike and relax with video games. Making, developing and &#x27;hacking&#x27; are his passions. </p>
+              </div>
+
+            <h4 id="work-experience"> <span class="fa fa-lg fa-pencil-square-o"></span> <span class="title">Work Experience</span> </h4>
+            <ul class="list-unstyled">
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Software Engineer</strong>,
+                      <a href="https://perblue.com" target="_blank">PerBlue</a>
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        <span class="space-right"> Jun 2015 -  Present  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 1 year 3 months </span> 
+                      </small>
+                    </p>
+                    <p>Worked on developing and implementing new content into the mobile role playing game - DragonSoul by PerBlue. Worked on implementing unique combat logic, content (new heroes, npcs and game modes) and developing tooling for both the art team and quality assurance team.</p>
+                      <ul>
+                          <li> Develop tools for both the art teamsand quality assurance teams </li>
+                          <li> Implement new types of combat logic </li>
+                          <li> Refactor large sections of the codebase to improve and implements new systems </li>
+                      </ul>
+                  </div>
+
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Web Developer</strong>,
+                      <a href="http://www.med.wisc.edu/show/survey-of-the-health-of-wisconsin/35828" target="_blank">Survey of the Heath of Wisconsin (SHOW)</a>
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        <span class="space-right"> Nov 2014 -  May 2015  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 5 months </span> 
+                      </small>
+                    </p>
+                    <p>Drafting and beginning of development for a new website/webapp for displaying health statistics and public health information.</p>
+                      <ul>
+                          <li> Used web technologies including Handlebars, Yeoman, Grunt and Bower. </li>
+                          <li> Quick iterations of the website for both layout and functionality </li>
+                      </ul>
+                  </div>
+
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Web Development Internship</strong>,
+                      <a href="http://lmig.com" target="_blank">Liberty Mutual</a>
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        <span class="space-right"> May 2014 -  Aug 2014  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 3 months </span> 
+                      </small>
+                    </p>
+                    <p>Development of mobile responsive internal web applications. Used EmberJS along with NodeJS and Twitter Bootstrap to create a simplified process for engaging the Mobile team using external APIs.</p>
+                      <ul>
+                          <li> Develop a greater understanding of web technologies </li>
+                          <li> Closely work with MVC pattern </li>
+                      </ul>
+                  </div>
+
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Office Administrative Aide</strong>,
+                      <a href="https://www.housing.wisc.edu/" target="_blank">University of Wisconsin Madison</a>
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        <span class="space-right"> Aug 2012 -  Nov 2014  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 2 years 3 months </span> 
+                      </small>
+                    </p>
+                    <p>Work with students and office staff to organize and coordinate residence hall activities and to design publicity used for these events.</p>
+                      <ul>
+                          <li> Create event publicity for residence halls </li>
+                          <li> Work with students and faculty to coordinate events </li>
+                      </ul>
+                  </div>
+
+                </li>
+            </ul>
+
+            <h4 id="skills"> <span class="fa fa-lg fa-code"></span> <span class="title">Skills</span> </h4>
+            <ul class="list-unstyled">
+                <li class="card-nested advanced">
+                  <strong>Sotware Development (advanced):</strong>
+                   <span class="enumeration">Java</span>  <span class="enumeration">Python</span>  <span class="enumeration">C</span>  <span class="enumeration">C++</span>  <span class="enumeration">Bash / Batch Scripting</span> 
+              </li>
+                <li class="card-nested intermediate">
+                  <strong>Web Development (intermediate):</strong>
+                   <span class="enumeration">HTML</span>  <span class="enumeration">CSS</span>  <span class="enumeration">Javascript</span>  <span class="enumeration">AngularJS</span>  <span class="enumeration">Ionic Framework</span>  <span class="enumeration">Jekyll</span>  <span class="enumeration">NodeJS</span>  <span class="enumeration">EmberJS</span> 
+              </li>
+            </ul>
+
+            <h4 id="education"><span class="fa fa-lg fa-mortar-board"></span> <span class="title">Education</span></h4>
+
+            <ul class="list-unstyled">
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Computer Science, Bachelor of Science</strong>,&nbsp;
+                      University of Wisconsin Madison
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        Sep 2011 -  May 2015 
+                      </small>
+                    </p>
+                    <i>3.1</i>
+                    <div class="space-top labels">
+                      
+                    </div>
+                  </div>
+                </li>
+            </ul>
+
+
+            <h4 id="volunteer-work"><span class="fa fa-lg fa-child"></span> <span class="title">Volunteer Work</span> </h4>
+            <ul class="list-unstyled">
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Teaching Assistant</strong>,&nbsp;
+                        <a href=http://adorable.io/post/kids-get-it>Kids Get IT</a>
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                          May 2016
+                      </small>
+                    </p>
+                    <p>Work with young children to help them learn about technology. Assist children in learning about making music with SonicPi, an open source live coding music synthesizer.</p>
+                    <ul>
+                    </ul>
+                  </div>
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Eagle Scout</strong>,&nbsp;
+                        <a href=http://www.scouting.org/>Boy Scouts of America</a>
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                          Jan 2005 -  Jan 2011 
+                      </small>
+                    </p>
+                    <p>Held several leadership positions, led activities, taught skills to scouts, organized food drives, fundraised, and assisted in planning troop projects. Led a middle-school FLL team as head coach for Eagle project.</p>
+                    <ul>
+                    </ul>
+                  </div>
+                </li>
+            </ul>
+
+
+
+
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </body>
+</html>
