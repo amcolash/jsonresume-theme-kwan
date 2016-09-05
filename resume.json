@@ -36,9 +36,9 @@
       "endDate": "",
       "summary": "Worked on developing and implementing new content into the mobile role playing game - DragonSoul by PerBlue. Worked on implementing unique combat logic, content (new heroes, npcs and game modes) and developing tooling for both the art team and quality assurance team.",
       "highlights": [
-        "Develop tools for both the art teamsand quality assurance teams",
-        "Implement new types of combat logic",
-        "Refactor large sections of the codebase to improve and implements new systems"
+        "Develop tools for both the art teams and quality assurance teams",
+        "Implement new types of combat logic and mechanics",
+        "Refactor large sections of the codebase to improve and implement new systems"
       ]
     },
     {
@@ -47,9 +47,9 @@
       "website": "http://www.med.wisc.edu/show/survey-of-the-health-of-wisconsin/35828",
       "startDate": "2014-11-01",
       "endDate": "2015-05-01",
-      "summary": "Drafting and beginning of development for a new website/webapp for displaying health statistics and public health information.",
+      "summary": "Drafting and development for a new website/webapp that displays health statistics and public health information. This portal provides a simple way to quickly see public health information collected from SHOW.",
       "highlights": [
-        "Used web technologies including Handlebars, Yeoman, Grunt and Bower.",
+        "Used web technologies including Handlebars, Yeoman, Grunt and Bower",
         "Quick iterations of the website for both layout and functionality"
       ]
     },
@@ -59,9 +59,10 @@
       "website": "http://lmig.com",
       "startDate": "2014-05-01",
       "endDate": "2014-08-01",
-      "summary": "Development of mobile responsive internal web applications. Used EmberJS along with NodeJS and Twitter Bootstrap to create a simplified process for engaging the Mobile team using external APIs.",
+      "summary": "Development of mobile responsive internal web applications. Worked on creating a simplified process for engaging the Mobile team using external APIs.",
       "highlights": [
         "Develop a greater understanding of web technologies",
+        "Used web technologies including EmberJS, NodeJS, Twitter Bootstrap and Grunt",
         "Closely work with MVC pattern"
       ]
     },
@@ -71,7 +72,7 @@
       "website": "https://www.housing.wisc.edu/",
       "startDate": "2012-08-01",
       "endDate": "2014-11-01",
-      "summary": "Work with students and office staff to organize and coordinate residence hall activities and to design publicity used for these events.",
+      "summary": "Work with students and office staff to organize and coordinate residence hall activities. Design event publicity used for these events. Interact with large groups of people and provide information about the residence hall and the many engaging programs offered.x",
       "highlights": [
         "Create event publicity for residence halls",
         "Work with students and faculty to coordinate events"
@@ -94,7 +95,7 @@
       "website": "http://www.scouting.org/",
       "startDate": "2005-01-01",
       "endDate": "2011-01-01",
-      "summary": "Held several leadership positions, led activities, taught skills to scouts, organized food drives, fundraised, and assisted in planning troop projects. Led a middle-school FLL team as head coach for Eagle project.",
+      "summary": "Held several leadership positions, led activities, taught skills to scouts, organized food drives, fundraised, and assisted in planning troop projects. Led a middle-school FIRST Lego League team as head coach for Eagle project.",
       "highlights": []
     }
   ],
@@ -139,6 +140,25 @@
     }
   ],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Software Development",
+      "keywords": [
+        "Video Games",
+        "Web Applications",
+        "Mobile Applications",
+        "Wearable Technology"
+      ]
+    },
+    {
+      "name": "Hobbies",
+      "keywords": [
+        "Biking",
+        "Running",
+        "Photography",
+        "Video Games"
+      ]
+    }
+  ],
   "references": []
 }
