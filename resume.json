@@ -34,11 +34,12 @@
       "website": "https://perblue.com",
       "startDate": "2015-06-01",
       "endDate": "",
-      "summary": "Worked on developing and implementing new content into the mobile role playing game - DragonSoul by PerBlue. Worked on implementing unique combat logic, content (new heroes, npcs and game modes) and developing tooling for both the art team and quality assurance team.",
+      "summary": "Worked on developing and implementing new content into the mobile role playing games DragonSoul and BlockBoss by PerBlue. Worked on implementing unique combat logic, content (new heroes, npcs and game modes) and developing tooling for both the art team and quality assurance team.",
       "highlights": [
-        "Develop tools for both the art teams and quality assurance teams",
+        "Conotinual improvement of game by working closely with multiple teams within the studio",
+        "Develop tools for both the art teams and quality assurance teams to improve workflow",
         "Implement new types of combat logic and mechanics",
-        "Refactor large sections of the codebase to improve and implement new systems"
+        "Refactor large sections of the codebase to improve and implement new systems to make development of new characters easier and faster"
       ]
     },
     {
@@ -130,9 +131,11 @@
       "keywords": [
         "HTML",
         "CSS",
+        "SASS/LESS",
         "Javascript",
         "AngularJS",
         "Ionic Framework",
+        "Twitter Bootstrap",
         "Jekyll",
         "NodeJS",
         "EmberJS"
@@ -142,7 +145,7 @@
   "languages": [],
   "interests": [
     {
-      "name": "Software Development",
+      "name": "Software Development Experience",
       "keywords": [
         "Video Games",
         "Web Applications",
