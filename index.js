@@ -90,11 +90,11 @@ function render(resume) {
                         "codepen", "foursquare", "reddit", "spotify",
                         "dribble", "dribbble", "facebook", "angellist",
                         "bitbucket", "skype"],
-        date_format = 'MMM YYYY';
+        date_format = 'MMMM YYYY';
 
     if (!resume.basics.picture && hasEmail(resume)) {
         resume.basics.picture = gravatar.url(resume.basics.email.replace('(at)', '@'), {
-            s: '100',
+            s: '250',
             r: 'pg',
             d: 'mm'
         });
