@@ -76,6 +76,13 @@
             <hr>
 
             <div class="social-links">
+              {{#if website}}
+                <a class="social-link" href={{website}} target="_blank">
+                  <span class="fa fa-globe fa-2x"></span>
+                  <span class="social-link-text">{{website}}</span>
+                </a>
+              {{/if}}
+
               {{#profiles}}
                 <a class="social-link" href="{{url}}" target="_blank">
                   <span class="fa fa-{{toClassName network}} fa-2x"></span>
