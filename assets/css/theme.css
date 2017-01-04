@@ -311,6 +311,7 @@ h4 > .fa {
 }
 .card-nested {
   padding: 1.5rem 0 1.5rem 4.2rem;
+  page-break-inside: avoid;
 }
 .card-wrapper {
   padding: 5px;

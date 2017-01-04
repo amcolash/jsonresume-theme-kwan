@@ -154,7 +154,7 @@
                         {{startDate}} - {{#if endDate}} {{endDate}} {{else}} Currently Pursuing {{/if}}
                       </small>
                     </p>
-                    <i>{{gpa}}</i>
+                    <i>GPA: {{gpa}}</i>
                     <div class="space-top labels">
                       {{#courses}} <span class="label label-keyword">{{.}}</span> {{/courses}}
                     </div>
