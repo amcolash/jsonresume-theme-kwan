@@ -317,7 +317,7 @@ h4 > .fa {
 .card {
   background: #ffffff;
   border: 1px solid #e6e6e6;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 2em 3.5em;
 }
 .card-nested {
@@ -325,7 +325,7 @@ h4 > .fa {
   page-break-inside: avoid;
 }
 .card-wrapper {
-  padding: 5px;
+  padding: 10px 8px;
 }
 .enumeration:not(:last-child):after {
   content: ", ";
@@ -345,10 +345,16 @@ h4 > .fa {
   .card-nested {
     padding-left: 0;
   }
+  .card {
+    padding: 2em 2.5em;
+  }
 }
 @media only screen and (max-width: 480px) {
   .contact-details .detail {
     display: block;
+  }
+  .card {
+    padding: 2em 1.5em;
   }
 }
 .card-skills {
@@ -522,8 +528,8 @@ h4 > .fa {
                     </p>
                     <p class="text-muted">
                       <small>
-                        <span class="space-right"> June 2015 -  Present  </span>
-                         <span> <i class="fa fa-clock-o icon-left"></i> 1 year 9 months </span> 
+                        <span class="space-right date"> June 2015 -  Present  </span>
+                         <span class="duration"> <i class="fa fa-clock-o icon-left"></i> 1 year 11 months </span> 
                       </small>
                     </p>
                     <p>Worked on developing and implementing new content into the mobile role playing games DragonSoul and BlockBoss by PerBlue. Worked on implementing unique combat logic, content (new heroes, npcs and game modes) and developing tooling for both the art team and quality assurance team.</p>
@@ -544,8 +550,8 @@ h4 > .fa {
                     </p>
                     <p class="text-muted">
                       <small>
-                        <span class="space-right"> November 2014 -  May 2015  </span>
-                         <span> <i class="fa fa-clock-o icon-left"></i> 5 months </span> 
+                        <span class="space-right date"> November 2014 -  May 2015  </span>
+                         <span class="duration"> <i class="fa fa-clock-o icon-left"></i> 5 months </span> 
                       </small>
                     </p>
                     <p>Drafting and development for a new website/webapp that displays health statistics and public health information. This portal provides a simple way to quickly see public health information collected from SHOW.</p>
@@ -564,8 +570,8 @@ h4 > .fa {
                     </p>
                     <p class="text-muted">
                       <small>
-                        <span class="space-right"> May 2014 -  August 2014  </span>
-                         <span> <i class="fa fa-clock-o icon-left"></i> 3 months </span> 
+                        <span class="space-right date"> May 2014 -  August 2014  </span>
+                         <span class="duration"> <i class="fa fa-clock-o icon-left"></i> 3 months </span> 
                       </small>
                     </p>
                     <p>Development of mobile responsive internal web applications. Worked on creating a simplified process for engaging the Mobile team using external APIs.</p>
@@ -585,8 +591,8 @@ h4 > .fa {
                     </p>
                     <p class="text-muted">
                       <small>
-                        <span class="space-right"> August 2012 -  November 2014  </span>
-                         <span> <i class="fa fa-clock-o icon-left"></i> 2 years 3 months </span> 
+                        <span class="space-right date"> August 2012 -  November 2014  </span>
+                         <span class="duration"> <i class="fa fa-clock-o icon-left"></i> 2 years 3 months </span> 
                       </small>
                     </p>
                     <p>Work with students and office staff to organize and coordinate residence hall activities. Design event publicity used for these events. Interact with large groups of people and provide information about the residence hall and the many engaging programs offered.</p>
@@ -706,5 +712,37 @@ h4 > .fa {
       </section>
     </div>
 
+    <script>
+      function timeSince(date) {
+  var seconds = Math.floor((new Date() - date) / 1000);
+
+  var years = Math.floor(seconds / 31536000);
+  var months = Math.floor(seconds / 2592000) - (years * 12);
+
+  if (years >= 1) {
+    years = years + (years > 1 ? " years " : " year ");
+  } else {
+    years = "";
+  }
+
+  if (months >= 1) {
+    months = months + (months > 1 ? " months " : " month ");
+  } else {
+    months = "";
+  }
+
+  return years + months;
+};
+
+var items = document.getElementsByClassName('text-muted');
+for (var i = 0; i < items.length; i++) {
+	if (items[i].innerHTML.toLowerCase().includes('present')) {
+		var start = new Date(items[i].getElementsByClassName('date')[0].innerHTML.replace(/\s*-\s*Present/, '').trim());
+		var since = timeSince(start);
+		items[i].getElementsByClassName('duration')[0].innerHTML = '<i class="fa fa-clock-o icon-left"></i> ' + since;
+	}
+}
+
+    </script>
   </body>
 </html>

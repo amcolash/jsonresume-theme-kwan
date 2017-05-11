@@ -118,8 +118,8 @@
                     </p>
                     <p class="text-muted">
                       <small>
-                        <span class="space-right"> {{startDate}} - {{#if endDate}} {{endDate}} {{else}} Present {{/if}} </span>
-                        {{#if duration}} <span> <i class="fa fa-clock-o icon-left"></i> {{duration}} </span> {{/if}}
+                        <span class="space-right date"> {{startDate}} - {{#if endDate}} {{endDate}} {{else}} Present {{/if}} </span>
+                        {{#if duration}} <span class="duration"> <i class="fa fa-clock-o icon-left"></i> {{duration}} </span> {{/if}}
                       </small>
                     </p>
                     <p>{{summary}}</p>
@@ -299,5 +299,8 @@
       </section>
     </div>
 
+    <script>
+      {{{js}}}
+    </script>
   </body>
 </html>

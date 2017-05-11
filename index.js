@@ -83,6 +83,7 @@ function getUrlFromUsername( site, username ) {
 
 function render(resume) {
     var css = fs.readFileSync(__dirname + '/assets/css/theme.css', 'utf-8'),
+        js = fs.readFileSync(__dirname + '/assets/js/index.js', 'utf-8'),
         template = fs.readFileSync(__dirname + '/resume.template', 'utf-8'),
         profiles = resume.basics.profiles,
         social_sites = ["github", "linkedin", "stackoverflow", "twitter",
@@ -197,6 +198,7 @@ function render(resume) {
     })
     return Handlebars.compile(template)({
         css: css,
+        js: js,
         resume: resume
     });
 }
