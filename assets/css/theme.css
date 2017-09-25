@@ -1,3 +1,16 @@
+.top-icons {
+  position: fixed;
+  top: 4px;
+  right: 4px;
+  font-size: 32px;
+}
+.top-icons .fa {
+  cursor: pointer;
+  padding: 12px 7px;
+}
+.top-icons #border {
+  border-bottom: 2px solid #555;
+}
 .clear-margin {
   margin: 0;
 }
@@ -16,6 +29,10 @@
 .labels {
   word-spacing: 5px;
   line-height: 2;
+}
+hr {
+  margin-top: 16px;
+  margin-bottom: q6px;
 }
 .label-keyword {
   display: inline-block;
@@ -375,16 +392,19 @@ h4 > .fa {
   .quote {
     font-size: inherit;
   }
+  .top-icons {
+    display: none;
+  }
 }
 @media print {
   body {
     font-size: 10pt;
   }
+  .social-link-text {
+    text-decoration: underline;
+  }
   a[href]:after {
     content: none !important;
-  }
-  .pagebreak {
-    page-break-before: always;
   }
   .background-card h4:not(:first-child) {
     margin-top: 0 !important;
@@ -401,9 +421,9 @@ h4 > .fa {
     color: #888 !important;
   }
   .background-card h4 {
-    padding-bottom: 0.5em;
-    margin-bottom: 0.5em;
-    margin-top: 1em !important;
+    padding-bottom: 0.35em;
+    margin-bottom: 0.35em;
+    margin-top: 0.7em !important;
   }
   h4 > .fa {
     display: none !important;
@@ -419,5 +439,8 @@ h4 > .fa {
   }
   blockquote {
     font-size: 100%;
+  }
+  .top-icons {
+    display: none;
   }
 }
