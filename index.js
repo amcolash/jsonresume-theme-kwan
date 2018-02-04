@@ -94,7 +94,7 @@ function render(resume) {
         date_format = 'MMMM YYYY';
 
     if (!resume.basics.picture && hasEmail(resume)) {
-        resume.basics.picture = gravatar.url(resume.basics.email.replace('(at)', '@'), {
+        resume.basics.picture = "https:" + gravatar.url(resume.basics.email.replace('(at)', '@'), {
             s: '250',
             r: 'pg',
             d: 'mm'

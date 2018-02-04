@@ -16,6 +16,7 @@
   "license": "MIT",
   "homepage": "https://github.com/icoloma/jsonresume-theme-kwan",
   "dependencies": {
+    "chrome-headless-render-pdf": "^1.5.0",
     "gravatar": "^1.0.6",
     "handlebars": "^2.0.0-alpha.4",
     "moment": "^2.8.1",
