@@ -1,3 +1,5 @@
+Note: This is my own personal fork of the the fork. It houses my personal resume and tweaks that I found fitting to my own needs.
+
 # Kwan Theme 
 
 This is a fork from [Elegant Theme](https://github.com/mudassir0909/jsonresume-theme-elegant) by Mudassir Ali, modified to improve print styles and in general simplify things. 
