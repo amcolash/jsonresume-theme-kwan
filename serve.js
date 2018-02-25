@@ -31,7 +31,7 @@ console.log("Serving..");
 
 function render() {
     try {
-      var resume = args._.length? JSON.parse(fs.readFileSync(args._[0], 'utf8')) : require("resume-schema").resumeJson;
+        var resume = args._.length ? JSON.parse(fs.readFileSync(args._[0], 'utf8')) : JSON.parse(fs.readFileSync('resume.json', 'utf8'));
         return theme.render(resume);
     } catch (e) {
         console.log(e.message);

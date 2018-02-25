@@ -11,16 +11,34 @@
     <style>
       .top-icons {
   position: fixed;
-  top: 4px;
-  right: 4px;
-  font-size: 32px;
+  top: 14px;
+  text-align: center;
+  line-height: 1;
+}
+.top-icons a:hover {
+  text-decoration: none;
+}
+.top-icons.left {
+  left: 16px;
+}
+.top-icons.right {
+  right: 16px;
 }
 .top-icons .fa {
+  font-size: 32px;
   cursor: pointer;
-  padding: 12px 7px;
 }
-.top-icons #border {
+.top-icons .icon-label {
+  padding-top: 3px;
+  color: #777;
+}
+.top-icons span {
+  font-size: 14px;
+}
+.top-icons .border {
   border-bottom: 2px solid #555;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 .clear-margin {
   margin: 0;
@@ -399,7 +417,7 @@ h4 > .fa {
     border-color: black;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .quote {
     font-size: inherit;
   }
@@ -457,15 +475,53 @@ h4 > .fa {
 }
 
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+< script async src = 'https://www.googletagmanager.com/gtag/js?id=UA-114681426-1'></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-114681426-1');
+</script>
   </head>
 
   <body itemscope itemtype="http://schema.org/Person">
 
+    <div class="top-icons left">
+      <div>
+        <a href="../" title="Home">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          <i class="fa fa-home" aria-hidden="true"></i>
+        </a>
+        <div class="icon-label">
+          <span>Home</span>
+        </div>
+      </div>
+    </div>
 
-    <div class="top-icons">
-      <a href="#" title="Print Resume"><i id="border" class="fa fa-print" aria-hidden="true" onclick="window.print();"></i></a>
-      <br>
-      <a href="Andrew McOlash.pdf" target="_blank" title="Download Resume" download><i class="fa fa-download" aria-hidden="true"></i></a>
+    <div class="top-icons right">
+      <div class="border">
+        <div>
+          <a href="#" title="Print Resume"><i class="fa fa-print" aria-hidden="true" onclick="window.print();"></i></a>
+        </div>
+        <div class="icon-label">
+          <span>Print</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <a href="Andrew McOlash.pdf" target="_blank" title="Download Resume" download>
+            <i class="fa fa-download" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="icon-label">
+          <span>PDF</span>
+        </div>
+      </div>
+
+      
     </div>
 
     <div class="container">
@@ -562,7 +618,7 @@ h4 > .fa {
                          <span class="duration"> <i class="fa fa-clock-o icon-left"></i> 2 years 8 months </span> 
                       </small>
                     </p>
-                    <p>Worked on developing and implementing new content into the mobile role playing games DragonSoul and Portal Quest at PerBlue. Worked on implementing unique combat logic, content (new heroes, npcs and game modes) and developing tooling for both the art team and quality assurance team.</p>
+                    <p>Worked on developing and implementing new content into the mobile role playing games Disney Heroes: Battle Mode, Portal Quest, and DragonSoul at PerBlue. Worked on implementing unique combat logic, content (new heroes, environments and game modes) and developing tooling for both the art team and quality assurance team.</p>
                       <ul>
                           <li> Continual improvement of game by working closely with multiple teams within the studio </li>
                           <li> Develop tools for both the art teams and quality assurance teams to improve workflow </li>

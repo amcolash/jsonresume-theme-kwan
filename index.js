@@ -93,6 +93,20 @@ function render(resume) {
                         "bitbucket", "skype"],
         date_format = 'MMMM YYYY';
 
+    var analytics = "";
+    if (resume.analytics) {
+        analytics = 
+        "<!-- Global site tag (gtag.js) - Google Analytics -->" + "\n" +
+        "< script async src = 'https://www.googletagmanager.com/gtag/js?id=UA-114681426-1'></script>" + "\n" +
+        "<script>" + "\n" +
+        "    window.dataLayer = window.dataLayer || [];" + "\n" +
+        "    function gtag() {dataLayer.push(arguments); }" + "\n" +
+        "    gtag('js', new Date());" + "\n" +
+        "    gtag('config', 'UA-114681426-1');" + "\n" +
+        "</script>"
+        ;
+    }
+
     if (!resume.basics.picture && hasEmail(resume)) {
         resume.basics.picture = "https:" + gravatar.url(resume.basics.email.replace('(at)', '@'), {
             s: '250',
@@ -199,7 +213,8 @@ function render(resume) {
     return Handlebars.compile(template)({
         css: css,
         js: js,
-        resume: resume
+        resume: resume,
+        analytics: analytics
     });
 }
 

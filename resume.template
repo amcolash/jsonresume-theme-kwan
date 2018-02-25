@@ -11,15 +11,46 @@
     <style>
       {{{css}}}
     </style>
+
+    {{{analytics}}}
   </head>
 
   <body itemscope itemtype="http://schema.org/Person">
 
+    <div class="top-icons left">
+      <div>
+        <a href="../" title="Home">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          <i class="fa fa-home" aria-hidden="true"></i>
+        </a>
+        <div class="icon-label">
+          <span>Home</span>
+        </div>
+      </div>
+    </div>
 
-    <div class="top-icons">
-      <a href="#" title="Print Resume"><i id="border" class="fa fa-print" aria-hidden="true" onclick="window.print();"></i></a>
-      <br>
-      <a href="Andrew McOlash.pdf" target="_blank" title="Download Resume" download><i class="fa fa-download" aria-hidden="true"></i></a>
+    <div class="top-icons right">
+      <div class="border">
+        <div>
+          <a href="#" title="Print Resume"><i class="fa fa-print" aria-hidden="true" onclick="window.print();"></i></a>
+        </div>
+        <div class="icon-label">
+          <span>Print</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <a href="Andrew McOlash.pdf" target="_blank" title="Download Resume" download>
+            <i class="fa fa-download" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="icon-label">
+          <span>PDF</span>
+        </div>
+      </div>
+
+      
     </div>
 
     <div class="container">

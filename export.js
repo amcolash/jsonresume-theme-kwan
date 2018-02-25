@@ -15,6 +15,7 @@ fs.readFile(file, function(err, resumeJson) {
     return;
   } else {
     resumeJson = JSON.parse(resumeJson);
+    resumeJson.analytics = true;
   }
 
   var render = require(process.cwd() + '/index').render;

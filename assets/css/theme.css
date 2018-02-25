@@ -1,15 +1,33 @@
 .top-icons {
   position: fixed;
-  top: 4px;
-  right: 4px;
-  font-size: 32px;
+  top: 14px;
+  text-align: center;
+  line-height: 1;
+}
+.top-icons a:hover {
+  text-decoration: none;
+}
+.top-icons.left {
+  left: 16px;
+}
+.top-icons.right {
+  right: 16px;
 }
 .top-icons .fa {
+  font-size: 32px;
   cursor: pointer;
-  padding: 12px 7px;
 }
-.top-icons #border {
+.top-icons .icon-label {
+  padding-top: 3px;
+  color: #777;
+}
+.top-icons span {
+  font-size: 14px;
+}
+.top-icons .border {
   border-bottom: 2px solid #555;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 .clear-margin {
   margin: 0;
@@ -388,7 +406,7 @@ h4 > .fa {
     border-color: black;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .quote {
     font-size: inherit;
   }
